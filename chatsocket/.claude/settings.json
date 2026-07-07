@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cp \"C:/Users/Mati/AppData/Local/Temp/claude/c--Users-Mati-Downloads-files-web-chatsocket/b460d90c-3d2f-4928-9df5-8a5ac7c6eeda/scratchpad/test_chat.js\" \"c:/Users/Mati/Downloads/files/web/chatsocket/frontend/__test_chat.js\")",
+      "Bash(node __test_chat.js)",
+      "Bash(node __test_chat.cjs)",
+      "Bash(rm __test_chat.cjs)",
+      "Bash(npx eslint *)"
+    ]
+  }
+}

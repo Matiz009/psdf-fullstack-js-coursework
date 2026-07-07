@@ -16,6 +16,7 @@ const Contact = () => {
   // Handle input changes dynamically
   const handleChange = (e) => {
     const { name, value } = e.target;
+    console.log(`Input changed: ${name} = ${value}`);
     setFormData((prevData) => ({
       ...prevData,
       [name]: value
@@ -156,7 +157,8 @@ const styles = {
     border: '1px solid #ccc',
     fontSize: '1rem',
     outline: 'none',
-    transition: 'border-color 0.2s'
+    transition: 'border-color 0.2s',
+    color: '#333'
   },
   textarea: {
     resize: 'vertical'

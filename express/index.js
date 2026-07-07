@@ -2,6 +2,7 @@ const express = require('express');
 const cookieParser = require('cookie-parser');
 const connectDB = require('./connect_db');
 const protect = require('./middleware/auth');
+const cors = require('cors');
 const { getProducts, getProductById, createProduct, deleteProduct, updateProduct } = require('./routes/product');
 const { register, login, getUsers, getUserById, deleteUser, profile, logout } = require('./routes/user');
 require('dotenv').config();
@@ -12,6 +13,7 @@ const server = '/api/v1'
 
 app.use(express.json());
 app.use(cookieParser());
+app.use(cors());
 
 app.get('/', (req, res) => {
   res.json({ message: 'Hello Express!' });

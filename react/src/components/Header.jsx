@@ -114,6 +114,10 @@ const Menu = ({ isDarkMode, onToggleTheme }) => {
                   <Link to="/posts"
                      className="hover:text-blue-700 dark:hover:text-blue-400 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded">Posts</Link>
                </li>
+               <li>
+                  <Link to="/useref"
+                     className="hover:text-blue-700 dark:hover:text-blue-400 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded">UseRef</Link>
+               </li>
             </ul>
          </div>
 
